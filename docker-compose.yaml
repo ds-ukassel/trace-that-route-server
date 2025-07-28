@@ -1,0 +1,9 @@
+services:
+  trace-that-route:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trace_that_route
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
