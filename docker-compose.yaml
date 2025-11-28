@@ -1,5 +1,6 @@
 services:
   trace-that-route:
+    image: registry.uni-kassel.dev/trace-that-route/server
     build:
       context: .
       dockerfile: Dockerfile
