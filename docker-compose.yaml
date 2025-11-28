@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      platforms: [linux/amd64, linux/arm64]
     container_name: trace_that_route
     ports:
       - "8000:8000"
